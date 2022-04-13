@@ -102,7 +102,8 @@ class Question {
   length() {
     return this.find().length;
   }
-  // Retorna un elemento a alzar
+
+  
   random() {
     let all = this.find();
     let questions = all.filter((option) => option.state !== true);

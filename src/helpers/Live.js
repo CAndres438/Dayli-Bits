@@ -5,7 +5,7 @@ const {LIFE} = alfa;
 class Live {
     constructor(category) {
       this.category = category;
-      // this.progress = new ProgressBar(category);
+     
       if (category){
         this.start(category)
       };

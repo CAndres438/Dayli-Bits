@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { StatisticsConsumer, StatisticsContex } from "../context/StatisticsContext";
 import { getStatisticsInfo } from "../helpers/statisticsInfo";
-// import { statisticsReducer } from "../reducers/statisticsReducer";
+
 
 import { CResponse,
      CResponseF, 
@@ -67,7 +67,7 @@ const Statistics = () => {
                         </Span>
                         Tiempo de estudios (Horas)
                     </Times>
-                    <CTimes id="count-times">{statistics.hours}1000000</CTimes>
+                    <CTimes id="count-times">{statistics.hours}</CTimes>
                     </StatisticsC>
 
                     <StatisticsC>
@@ -90,7 +90,7 @@ const Statistics = () => {
                             Respuestas contestadas
                         </Response>
                         <CResponse id="count-response">
-                            0
+                        {statistics.totalResponse}
                         </CResponse>
                     </StatisticsC>
 
@@ -116,7 +116,7 @@ const Statistics = () => {
                             Respuestas Correctas
                         </ResponseSuc>
                         <CResponseSuc id="count-response-success">
-                            0
+                        {statistics.successResponses}
                         </CResponseSuc>
                     </StatisticsC>
 
@@ -143,7 +143,7 @@ const Statistics = () => {
                             Respuestas Incorrectas
                         </ResponseF>
                         <CResponseF id="count-response-failed">
-                            0
+                        {statistics.failedResponses}
                         </CResponseF>
                     </StatisticsC>
                     </>)}

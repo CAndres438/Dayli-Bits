@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Alert from "../components/Alert";
-import ProgressBarH from "../components/ProgressBar";
-import ProgressBar from "../components/ProgressBar";
+import ProgressBarH from "../helpers/ProgressBarH";
 import Question from "../components/Questions";
 import Cleaner from "../helpers/Cleaner";
 import Live from "../helpers/Live";
@@ -185,7 +184,7 @@ const {
           <span id="close" onClick={async () => await handleClose()}>
             <Img src='https://res.cloudinary.com/daalu/image/upload/v1648833061/Recursos_Daily/Property_1_x_xxq9or.svg' alt="close" />
           </span>
-          <ProgressBar percent={progress} />
+          <ProgressBarH percent={progress} />
           <span>
             <img src='https://res.cloudinary.com/daalu/image/upload/v1648833062/Recursos_Daily/Property_1_heart_lhzj68.svg' alt="heart" />
           </span>

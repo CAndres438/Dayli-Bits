@@ -123,36 +123,4 @@ const Home=()=>{
     );
   };
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     const {dispatch} = useContext(AuthContext);
-
-//     const handleClick = () => {
-//         dispatch(logout());
-
-//         localStorage.clear()
-//     }
-//     return(
-//         <div>Home
-        
-//         <button onClick={handleClick}>Logout</button>
-//         </div>
-//         )
-// }
-
 export default Home

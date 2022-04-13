@@ -8,7 +8,7 @@ const Test = () => {
       let unmounted = false;
       if (!unmounted) {
         setTimeout(() => {
-          navigate.push("/login");
+          navigate("/login");
         }, 6000);
       }
       return () => {

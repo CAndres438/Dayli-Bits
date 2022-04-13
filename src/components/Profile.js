@@ -7,9 +7,9 @@ import Footer from "./Footer";
 
 const Profile = ()=>{
     let initialState = {
-        name: "Jonh",
-        lastname: "Snow",
-        email: "jsnow@gamesofthrones.com",
+        name: "Carlos",
+        lastname: "Ortiz",
+        email: "daaluempresa@gmail.com",
         imageUrl: "https://res.cloudinary.com/daalu/image/upload/v1649798335/Recursos_Daily/avatar_nraomz.svg",
     };
 
